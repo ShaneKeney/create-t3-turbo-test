@@ -14,5 +14,10 @@
   "typescript.preferences.autoImportFileExcludePatterns": [
     "next/router.d.ts",
     "next/dist/client/router.d.ts"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#40290D",
+    "titleBar.activeBackground": "#593912",
+    "titleBar.activeForeground": "#FDFAF7"
+  }
 }

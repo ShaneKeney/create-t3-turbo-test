@@ -6,13 +6,15 @@
   "scripts": {
     "clean": "git clean -xdf .expo .turbo node_modules",
     "dev": "expo start --ios",
+    "dev:rally2": "NODE_ENV=development npx expo start -c --dev-client",
     "dev:android": "expo start --android",
     "dev:ios": "expo start --ios",
     "lint": "eslint .",
     "format": "prettier --check \"**/*.{js,cjs,mjs,ts,tsx,md,json}\"",
     "typecheck": "tsc --noEmit",
     "android": "expo run:android",
-    "ios": "expo run:ios"
+    "ios": "expo run:ios",
+    "eas:build:development:ios": "APP_ENV=development eas build --wait --platform=ios --profile=development"
   },
   "dependencies": {
     "@expo/metro-config": "^0.10.7",
